@@ -11,29 +11,29 @@ const data = [
     },
     {
         type: 'input',
-        message: 'What is the Project Used for',
+        message: 'What is the Project Used for?',
         name: 'projUse',
     },
-    // {
-    //     type: 'input',
-    //     message: 'Write a short bio about yourself',
-    //     name: 'bio'
-    // },
-    // {
-    //     type: 'input',
-    //     message: 'what is your linkedIn URL?',
-    //     name: 'linkedIn',
-    // },
-    // {
-    //     type: 'input',
-    //     message: 'what is your gitHub URL?',
-    //     name: 'gitHub',
-    // },
-    // {
-    //     type: 'input',
-    //     message: 'What is your favorite hobby',
-    //     name: 'hobby'
-    // },
+    {
+        type: 'input',
+        message: 'How do you use this application?',
+        name: 'projHow'
+    },
+    {
+        type: 'input',
+        message: 'How do you install this application?',
+        name: 'install',
+    },
+    {
+        type: 'input',
+        message: 'How should the user report issues?',
+        name: 'issues',
+    },
+    {
+        type: 'input',
+        message: 'How can the user make Contributions to this app?',
+        name: 'contribution'
+    },
 ];
 
 // TODO: Create a function to write README file
@@ -41,13 +41,14 @@ inquirer
     .prompt(data)
     .then((response) =>{
     console.log(data)
-    fs.writeFile('README.MD', generateREADME(response), (err) =>
+    fs.writeFileSync('README.MD', generateREADME(response), (err) =>
     err? console.log(err) : console.log('response written to file') );
 })
+//make this into a deconstruction of the object?
 var generateREADME = (data) => {
     return `# ${data.projName}
     ## This project is used for ${data.projUse}
-    ## ${data.projName}
+    ## ${data.proj.how}
     ## ${data.projName}
     ## ${data.projName}
 
