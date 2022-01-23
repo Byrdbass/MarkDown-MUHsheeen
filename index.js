@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-// const genMarkdown = require('generateMarkdown.js') 
+const generateREADME = require('./utils/generateMarkdown') 
 
 // TODO: Create an array of questions for user input
 const data = [
@@ -84,7 +84,7 @@ const data = [
         type: 'list',
         message: 'How can the user make Contributions to this app?',
         name: 'license',
-        choices: ['small', 'medium', 'big']
+        choices: ['no license', 'MIT', 'ISC', 'Apache 2.0', '2-clause BSD', 'MPL 2.0']
     },
     
 ];
@@ -98,49 +98,49 @@ inquirer
     err? console.log(err) : console.log('response written to file') );
 })
 //make this into a deconstruction of the object?
-var generateREADME = (data) => {
-    return `
-# ${data.projName}
+// var generateREADME = (data) => {
+//     return `
+// # ${data.projName}
 
-## Description
-This project does ${data.projUse} by ${data.projHow}.  My motivation for this project was to ${data.motivation}.
-I wanted to solve the problem of ${data.problem}.  I learned that ${data.learn}. 
+// ## Description
+// This project does ${data.projUse} by ${data.projHow}.  My motivation for this project was to ${data.motivation}.
+// I wanted to solve the problem of ${data.problem}.  I learned that ${data.learn}. 
 
-# Table of Contents
-- [Installation](#Installation)
-- [Usage](#Usage)
-- [What-I-learned](#What-I-Learned)
-- [Screenshot-of-Application](#Screenshot-of-Application)
-- [Links](#Links)
-- [Credits](#Credits)
-- [License](#License)
+// # Table of Contents
+// - [Installation](#Installation)
+// - [Usage](#Usage)
+// - [What-I-learned](#What-I-Learned)
+// - [Screenshot-of-Application](#Screenshot-of-Application)
+// - [Links](#Links)
+// - [Credits](#Credits)
+// - [License](#License)
 
-## Installation
-In order to install this project you will need to ${data.install}.
+// ## Installation
+// In order to install this project you will need to ${data.install}.
 
-## Usage
-This Project is used for ${data.projUse}. *elaborate on your project motivation and use here*
+// ## Usage
+// This Project is used for ${data.projUse}. *elaborate on your project motivation and use here*
 
-## What-I-Learned
-This Project works by ${data.projHow}, and I learned that ${data.learn}.  
-The ${data.issues} were issues in this project.
-*Elaborate what you learned and add coding comments here*
+// ## What-I-Learned
+// This Project works by ${data.projHow}, and I learned that ${data.learn}.  
+// The ${data.issues} were issues in this project.
+// *Elaborate what you learned and add coding comments here*
 
-    *insert code snippets here*
+//     *insert code snippets here*
 
-## Screenshot of Application
-![${data.imageAlt}](${data.imageSrc})
+// ## Screenshot of Application
+// ![${data.imageAlt}](${data.imageSrc})
 
-## Links
-[${data.linkName}](${data.linkAddress})
+// ## Links
+// [${data.linkName}](${data.linkAddress})
 
-## Credits
-My gitHub user name is ${data.username}, and you may email me at ${data.email}.
-You may contribute to this project by ${data.contribution}.
+// ## Credits
+// My gitHub user name is ${data.username}, and you may email me at ${data.email}.
+// You may contribute to this project by ${data.contribution}.
 
-## License
-${data.license}
-`}
+// ## License
+// ${data.license}
+// `}
 // TODO: Create a function to initialize app
 //function init() { }
 

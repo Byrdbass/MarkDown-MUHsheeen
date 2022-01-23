@@ -1,9 +1,10 @@
 
-# dfgndfgn
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# j
 
 ## Description
-This project does dfgndfgn by dfghdfghd.  My motivation for this project was to dfgndfgn.
-I wanted to solve the problem of dfgdfgndf.  I learned that dfgndfgn. 
+This project does j by j.  My motivation for this project was to j.
+I wanted to solve the problem of j.  I learned that j. 
 
 # Table of Contents
 - [Installation](#Installation)
@@ -12,30 +13,31 @@ I wanted to solve the problem of dfgdfgndf.  I learned that dfgndfgn.
 - [Screenshot-of-Application](#Screenshot-of-Application)
 - [Links](#Links)
 - [Credits](#Credits)
-- [License](##License)
+- [License](#License)
+
 
 ## Installation
-In order to install this project you will need to dfgndfgn.
+In order to install this project you will need to j.
 
 ## Usage
-This Project is used for dfgndfgn. *elaborate on your project motivation and use here*
+This Project is used for j. *elaborate on your project motivation and use here*
 
 ## What-I-Learned
-This Project works by dfghdfghd, and I learned that dfgndfgn.  
-The dfghjdfghjd were issues in this project.
+This Project works by j, and I learned that j.  
+The j were issues in this project.
 *Elaborate what you learned and add coding comments here*
 
-    *insert code snippets here*
+  *insert code snippets here*
 
 ## Screenshot of Application
-![dfghdfghd](dfghdfgh)
+![j](j)
 
 ## Links
-[dfghdfgh](dfghdfgh)
+[j](j)
 
 ## Credits
-My gitHub user name is sdfngdfgn, and you may email me at dfndfgndf.
-You may contribute to this project by dfghdfgh.
+My gitHub user name is j, and you may email me at j.
+You may contribute to this project by j.
 
 ## License
-medium
+    MIT
