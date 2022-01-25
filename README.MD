@@ -25,6 +25,9 @@ This Project is used for generating MarkDown files. In past projects, making the
 ## What-I-Learned
 This Project works by running `node index.js` in your terminal.  Then follow the prompts to generate a professional Readme.md file. I learned how to use npm packages fs and inquirer as well as how to navigate to different licenses in Github.  
 
+## Screenshot-of-Application
+![Screenshot of application](images\README-generator-gif.gif)
+
 ## Links
 [gitHub repository](https://github.com/Byrdbass/readme-generator)
 
