@@ -52,6 +52,11 @@ const data = [
     },
     {
         type: 'input',
+        message: 'How do you test this application?',
+        name: 'tests',
+    },
+    {
+        type: 'input',
         message: 'How should the user report issues?',
         name: 'issues',
     },
